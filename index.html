@@ -10,8 +10,8 @@
         <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
     </head>
     <body>
-        <div class="pgia-slider" data-pg-ia='{"l":[{"name":"GotoNext","trg":"no","a":{"l":[{"t":".pgia-slides-container","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"next"}}}]}]}},{"name":"AutoPlay","trg":"now"}]}'>
-            <div class="pgia-slides-container" data-pg-ia-scene='{"s":"whole","snap":"e","snap_dur":"0.2","snap_ease":"Linear.easeInOut","pag":"p","pag_i":"^.pgia-slider|.pgia-pagination-item","pag_clone":"true","pag_pa":"Current","pag_pd":"-Current"}'>
+        <div class="pgia-slider" data-pg-ia='{"l":[{"name":"GotoNext","trg":"no","a":{"l":[{"t":".pgia-slides-container","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"next"}}}]}]}},{"name":"AutoPlay","trg":"now","a":{"l":[{"t":"","l":[{"t":"set","p":2,"d":0,"l":{"pgia":{"play":"GotoNext"}}}]},{"t":".pgia-progress-bar","l":[{"t":"set","p":0,"d":0,"l":{"width":0}},{"t":"tween","p":0,"d":2,"l":{"width":"100%"},"e":"Linear.easeNone"}]}]},"rpt":"-1"},{"name":"CloneFirstSlide","trg":"now","a":{"l":[{"t":".pgia-slides-container #gt# div:nth-of-type(1)","l":[{"t":"set","p":0,"d":0,"l":{"pgDom":{"clone":1,"ins":"append"}}}]}]}},{"name":"UserActive","trg":"mouseenter","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"pgia":{"pause":"AutoPlay"}}}]}]},"rstr":"true"},{"name":"UserInactive","a":{"l":[{"t":"","l":[{"t":"tween","p":0.5,"d":0.5,"l":{"pgia":{"play":"AutoPlay"}}}]}]},"rstr":"true","trg":"mouseleave"}]}'>
+            <div class="pgia-slides-container" data-pg-ia-scene='{"s":"whole","snap":"e","snap_dur":"0.2","snap_ease":"Linear.easeInOut","pag":"p","pag_i":"^.pgia-slider|.pgia-pagination-item","pag_clone":"true","pag_pa":"Current","pag_pd":"-Current","pag_inf":"true"}'>
                 <div class="pgia-slide">
                     <h2 class="placeholder">Slide 1</h2>
                 </div>
@@ -25,11 +25,14 @@
                     <h2 class="placeholder">Slide 4</h2>
                 </div>
             </div>
-            <div class="pgia-controls"><a class="prev pgia-control" href="#" data-pg-ia-apply="$.pgia-control" data-scroll-to="prev" data-pg-ia='{"l":[{"name":"ScrollTo","trg":"click","a":{"l":[{"t":"^.pgia-slider|.pgia-slides-container","l":[{"t":"tween","p":0,"d":1,"l":{"scrollTo":{"dest":"${target.data-scroll-to}"}},"e":"Linear.easeInOut"}]}]},"pdef":"true"}]}'>&lsaquo;</a><a class="next pgia-control" href="#" data-scroll-to="next">&rsaquo;</a>
-                <div class="pgia-pagination"><a class="pgia-pagination-item" href="#" data-pg-ia='{"l":[{"name":"Current","trg":"no","a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":0.2,"l":{"scale":1.5}}]}]}},{"name":"ScrollToSlide","trg":"click","a":{"l":[{"t":"^.pgia-slider|.pgia-slides-container","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"item"}}}]}]},"pdef":"true"}]}'></a>
+            <div class="pgia-controls">
+                <a class="prev pgia-control" href="#" data-pg-ia-apply="$.pgia-control" data-scroll-to="prev" data-pg-ia='{"l":[{"name":"ScrollTo","trg":"click","a":{"l":[{"t":"^.pgia-slider|.pgia-slides-container","l":[{"t":"tween","p":0,"d":1,"l":{"scrollTo":{"dest":"${target.data-scroll-to}"}},"e":"Linear.easeInOut"}]}]},"pdef":"true"}]}'>&lsaquo;</a>
+                <a class="next pgia-control" href="#" data-scroll-to="next">&rsaquo;</a>
+                <div class="pgia-pagination">
+                    <a class="pgia-pagination-item" href="#" data-pg-ia='{"l":[{"name":"Current","trg":"no","a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":0.2,"l":{"scale":1.5}}]}]}},{"name":"ScrollToSlide","trg":"click","a":{"l":[{"t":"^.pgia-slider|.pgia-slides-container","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"item"}}}]}]},"pdef":"true"}]}'></a>
                 </div>
             </div>
-            <div class="pgia-progress" data-pg-collapsed>
+            <div class="pgia-progress">
                 <div class="pgia-progress-bar"></div>
             </div>
         </div>
